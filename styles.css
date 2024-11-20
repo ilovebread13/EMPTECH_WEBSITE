@@ -3,7 +3,19 @@ body {
 
 }
 
-.container {
-  padding: 4px;
+header {
+            background-color: orange;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            color: white;
+            position: sticky;
+        }
 
-}
+        /* Container for logo and navigation */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
