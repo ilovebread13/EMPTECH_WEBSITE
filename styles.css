@@ -24,7 +24,12 @@ header {
         .container a {
           text-decoration: none;
         }
-        .container a:hover {
+        nav ul {
+          display: flex;
+          list-style-type: none;
+
+        }
+          
           nav a:hover {
             color: #f4f4f4;
             background-color: #555;
