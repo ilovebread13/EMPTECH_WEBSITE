@@ -31,6 +31,21 @@ header {
         nav ul li {
             display: inline;
         }
+        /* Style for the navigation links */
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+          color: #f4f4f4;
+          background-color: #555;
+          padding: 5px;
+          border-radius: 5px;
+        }
+
 
         
         
