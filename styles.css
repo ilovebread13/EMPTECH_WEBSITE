@@ -28,5 +28,9 @@ header {
           padding: 0;
           gap: 20px;
         }
+        nav ul li {
+            display: inline;
+        }
 
+        
         
