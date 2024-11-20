@@ -9,6 +9,7 @@ header {
             box-shadow: 0 4px 6px rgba(0, 0, 100, 0.1);
             color: black;
             position: sticky;
+            border: none;
         }
 
         /* Container for logo and navigation */
