@@ -4,6 +4,7 @@ body {
 }
 
 header {
+            font-family: Verdana;
             background-color: orange;
             padding: 20px;
             box-shadow: 0 4px 6px rgba(100, 100, 100, 0.1);
