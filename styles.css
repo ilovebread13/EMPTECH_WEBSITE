@@ -40,8 +40,8 @@ header {
             transition: color 0.3s ease;
         }
         nav ul li a:hover {
-          color: #f4f4f4;
-          background-color: #555;
+          color: black;
+          background-color: white;
           padding: 5px;
           border-radius: 5px;
         }
