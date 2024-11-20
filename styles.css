@@ -1,6 +1,5 @@
 body {
-  background-color: black;
-
+  background-color: #0D1117;
 }
 
 header {
@@ -10,8 +9,6 @@ header {
             box-shadow: 0 4px 6px rgba(0, 0, 100, 0.1);
             color: black;
             position: sticky;
-            
-            
         }
 
         /* Container for logo and navigation */
@@ -21,6 +18,13 @@ header {
             align-items: center;
             max-width: 1200px;
             margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
         nav ul {
@@ -47,6 +51,7 @@ header {
           padding: 5px;
           border-radius: 5px;
         }
+
 footer {
   background: linear-gradient(90deg, rgba(255,176,64,0.9389005602240896) 0%, rgba(255,132,0,0.7988445378151261) 35%, rgba(255,166,0,1) 88%);
   position: fixed;
