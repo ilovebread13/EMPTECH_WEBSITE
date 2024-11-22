@@ -62,6 +62,7 @@ header {
       margin: 20px auto;
       max-width: 800px;
       color: #0D1117;
+      font-family: Verdana;
     }
 
     .sort-box ul {
@@ -85,7 +86,6 @@ header {
     }
 
     .sort-box ul li a:hover {
-      text-decoration: underline;
       box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
       color: white;
       background-color: rgba(0, 0, 0, 0.2);
