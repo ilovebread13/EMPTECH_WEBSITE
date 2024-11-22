@@ -6,20 +6,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Music Website</title>
   <styles>
-    .container {
-            padding: 10px;
-            border: none;
-            font-family: Verdana;
-            color: #0D1117;
-            position: sticky;
-            background: linear-gradient(90deg, rgba(255,176,64,0.9389005602240896) 0%, rgba(255,132,0,0.7988445378151261) 35%, rgba(255,166,0,1) 88%);
+    .sort-box {
+      background: linear-gradient(90deg, rgba(255,176,64,0.9389) 0%, rgba(255,132,0,0.7988) 35%, rgba(255,166,0,1) 88%);
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin: 20px auto;
+      max-width: 800px;
+      color: white;
     }
-    .box {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
+
+    .sort-box ul {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .sort-box ul li {
+      font-weight: bold;
+    }
+
+    .sort-box ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .sort-box ul li a:hover {
+      text-decoration: underline;
     }
     
   </styles>
@@ -36,17 +51,15 @@
       </nav>
     </div>
   </header>
-  <div class="container">
-    <div class="box">
-      <nav>
-        <ul>
-          <li>Sort by:</li>
-          <li><a href="popularity.html">Popularity</a></li>
-          <li><a href="Year.html">Year</a></li>
-        </ul>
-      </nav>
-    </div>
- </div>
+  <div class="sort-box">
+    <nav>
+      <ul>
+        <li>Sort by:</li>
+        <li><a href="popularity.html">Popularity</a></li>
+        <li><a href="Year.html">Year</a></li>
+      </ul>
+    </nav>
+  </div>
      
 
 
