@@ -3,11 +3,6 @@ body {
   margin: 0;
 }
 
-.container {
-  padding: 4px;
-  text-align: center;
-}
-
 header {
             font-family: Apricot;
             background: linear-gradient(90deg, rgba(255,176,64,0.9389005602240896) 0%, rgba(255,132,0,0.7988445378151261) 35%, rgba(255,166,0,1) 88%);
