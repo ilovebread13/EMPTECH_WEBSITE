@@ -3,6 +3,32 @@ body {
   margin: 0;
 }
 
+nav ul {
+          display: flex;
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+      
+        nav ul li a {
+            color: #0D1117;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+          color: white;
+          background-color: rgba(0, 0, 0, 0.2);
+          padding: 5px;
+          border-radius: 5px;
+        }
+
+
 header {
             font-family: Verdana;
             background: linear-gradient(90deg, rgba(255,176,64,0.9389005602240896) 0%, rgba(255,132,0,0.7988445378151261) 35%, rgba(255,166,0,1) 88%);
@@ -13,7 +39,7 @@ header {
             border: none;
         }
 
-        /* Container for logo and navigation */
+        
         .container {
             display: flex;
             justify-content: space-between;
@@ -39,7 +65,7 @@ header {
         nav ul li {
             display: inline;
         }
-        /* Style for the navigation links */
+        
         nav ul li a {
             color: #0D1117;
             text-decoration: none;
