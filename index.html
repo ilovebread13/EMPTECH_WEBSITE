@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Music Website</title>
   <styles>
-    .container { 
-    padding: 4px;
-    background: linear-gradient(90deg, rgba(255,176,64,0.9389005602240896) 0%, rgba(255,132,0,0.7988445378151261) 35%, rgba(255,166,0,1) 88%);
+    .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
     }
-    .sorts {
-    font-size: 14px;
-    font-family: Verdana;
-    }
+    
     
   </styles>
 </head>
@@ -30,9 +30,13 @@
     </div>
   </header>
   <div class="container">
-    <div class="sorts" id="filter">Sort by:</div>
-    <div class="sorts" id="popularity">Popularity</div>
-    <div class="sorts" id="artist">Artist</div>
+    <nav>
+      <ul>
+        <li>Sort by:</li>
+        <li><a href="popularity.html"></li>
+        <li><a href="artists.html"></li>
+      </ul>
+    </nav>
  </div>
      
 
