@@ -55,6 +55,38 @@ header {
           border-radius: 5px;
         }
 
+.sort-box {
+      background: linear-gradient(90deg, rgba(255,176,64,0.9389) 0%, rgba(255,132,0,0.7988) 35%, rgba(255,166,0,1) 88%);
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin: 20px auto;
+      max-width: 800px;
+      color: white;
+    }
+
+    .sort-box ul {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .sort-box ul li {
+      font-weight: bold;
+    }
+
+    .sort-box ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .sort-box ul li a:hover {
+      text-decoration: underline;
+    }
+    
+
 footer {
   background: linear-gradient(90deg, rgba(255,176,64,0.9389005602240896) 0%, rgba(255,132,0,0.7988445378151261) 35%, rgba(255,166,0,1) 88%);
   position: fixed;
