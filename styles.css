@@ -162,6 +162,7 @@ footer {
     gap: 10px;
     flex-wrap: wrap;
     width: 100%;
+    font-weight: bold;
 }
 
 button {
@@ -175,6 +176,7 @@ button {
     cursor: pointer;
     font-size: 16px;
     font-family: Verdana;
+    font-weight: bold;
 }
 
 button:hover {
