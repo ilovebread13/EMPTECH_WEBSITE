@@ -170,10 +170,11 @@ button {
     transition: all 0.3s ease;
     border: none;
     padding: 10px 20px;
-    color: #fff;
+    color: black;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    font-family: Verdana;
 }
 
 button:hover {
