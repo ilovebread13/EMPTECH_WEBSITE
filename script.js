@@ -1,4 +1,4 @@
-document.querySelectorAll('.audio-player').forEach(player => {
+document.querySelectorAll('.audio-player').forEach((player, index, playerArray) => {
     const audio = player.querySelector('.audio');
     const playPauseBtn = player.querySelector('.playPauseBtn');
     const progressBar = player.querySelector('.progressBar');
@@ -37,6 +37,13 @@ document.querySelectorAll('.audio-player').forEach(player => {
             audio.play();
         } else {
             playPauseBtn.textContent = 'Play';
+            if (index < playerArray.length - 1) {
+                const nextPlayer = playerArray[index + 1];
+                const nextAudio = nextPlayer.querySelector('.audio');
+                const nextPlayPauseBtn = nextPlayer.querySelector('.playPauseBtn');
+                nextAudio.play();
+                nextPlayPauseBtn.textContent = 'Pause';
+            }
         }
     });
 
