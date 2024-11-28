@@ -256,6 +256,9 @@ text-align: center;
 padding: 4px;
 box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
 font-family: verdana;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 #current-progress-bar {
@@ -282,6 +285,9 @@ font-family: verdana;
 .time-display {
 color: white;
 font-family: Verdana;
+display: flex;
+justify-content: center;
 width: 1500px;
 margin-top: 5px;
+gap: 3px;
 }
