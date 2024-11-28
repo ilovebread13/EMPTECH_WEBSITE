@@ -37,7 +37,9 @@ document.querySelectorAll('.audio-player').forEach((player, index, playerArray) 
             isCurrentPlaying = true;
             playPauseBtn.textContent = 'Pause';
             currentPlayingContainer.textContent = `Now Playing: ${songTitle}`;
-            currentProgressBar.max = audio.duration;
+            currentProgressBar.max = audio.duration; // Set max value to audio duration in seconds
+            currentProgressBar.value = audio.currentTime;
+            currentProgressTime.textContent = formatTime(audio.currentTime);
             totalProgressTime.textContent = formatTime(audio.duration);
         } else {
             audio.pause();
@@ -51,7 +53,7 @@ document.querySelectorAll('.audio-player').forEach((player, index, playerArray) 
         const progress = (audio.currentTime / audio.duration) * 100;
         progressBar.value = progress;
         if (isCurrentPlaying) {
-            currentProgressBar.value = progress;
+            currentProgressBar.value = audio.currentTime; // Update value directly as current time
             currentProgressTime.textContent = formatTime(audio.currentTime);
         }
         currentTimeDisplay.textContent = formatTime(audio.currentTime);
@@ -60,7 +62,7 @@ document.querySelectorAll('.audio-player').forEach((player, index, playerArray) 
     function displayTotalTime() {
         totalTimeDisplay.textContent = formatTime(audio.duration);
         if (isCurrentPlaying) {
-            currentProgressBar.max = 100;
+            currentProgressBar.max = audio.duration; // Ensure max value is set correctly
             totalProgressTime.textContent = formatTime(audio.duration);
         }
     }
@@ -85,15 +87,25 @@ document.querySelectorAll('.audio-player').forEach((player, index, playerArray) 
                 nextPlayPauseBtn.textContent = 'Pause';
                 currentPlayingContainer.textContent = `Now Playing: ${nextSongTitle}`;
                 isCurrentPlaying = true;
+                currentProgressBar.max = nextAudio.duration;
+                currentProgressBar.value = nextAudio.currentTime;
+                currentProgressTime.textContent = formatTime(nextAudio.currentTime);
+                totalProgressTime.textContent = formatTime(nextAudio.duration);
+
+                // Update progress bar and time display while playing
+                nextAudio.addEventListener('timeupdate', () => {
+                    currentProgressBar.value = nextAudio.currentTime;
+                    currentProgressTime.textContent = formatTime(nextAudio.currentTime);
+                });
             }
         }
     }
 
     function seekAudio(event) {
         if (isCurrentPlaying) {
-            const time = (event.target.value / 100) * audio.duration;
+            const time = event.target.value; // Directly use the value as time in seconds
             audio.currentTime = time;
-            progressBar.value = event.target.value;
+            progressBar.value = (audio.currentTime / audio.duration) * 100; // Sync progress bar with duration
         }
     }
 
