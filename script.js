@@ -9,6 +9,7 @@ document.querySelectorAll('.audio-player').forEach((player, index, playerArray) 
     const forwardBtn = player.querySelector('.forwardBtn');
     const repeatBtn = player.querySelector('.repeatBtn');
     const currentPlayingContainer = document.getElementById('current-playing');
+    const playingContainer = document.getElementById('current-playing-container');
     const currentProgressBar = document.getElementById('current-progress-bar');
     const currentProgressTime = document.getElementById('current-time');
     const totalProgressTime = document.getElementById('total-time');
@@ -37,6 +38,7 @@ document.querySelectorAll('.audio-player').forEach((player, index, playerArray) 
             isCurrentPlaying = true;
             playPauseBtn.textContent = 'Pause';
             currentPlayingContainer.textContent = `Now Playing: ${songTitle}`;
+            playingContainer.classList.add('show');
             currentProgressBar.max = audio.duration; // Set max value to audio duration in seconds
             currentProgressBar.value = audio.currentTime;
             currentProgressTime.textContent = formatTime(audio.currentTime);
@@ -46,6 +48,7 @@ document.querySelectorAll('.audio-player').forEach((player, index, playerArray) 
             isCurrentPlaying = false;
             playPauseBtn.textContent = 'Play';
             currentPlayingContainer.textContent = 'No song is playing right now.';
+            playingContainer.classList.remove('show');
         }
     }
 
