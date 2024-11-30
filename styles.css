@@ -159,6 +159,17 @@ footer {
     border-radius: 10px;
 }
 
+.song-box p {
+    font-family: verdana;
+    font-size: 1em;
+    font-weight: bold;
+
+}
+
+.song-box hr {
+    border: none;
+    border-top: 2px solid black
+}
 .song-details p {
   margin: 0;
   font-family: Verdana;
@@ -377,6 +388,44 @@ gap: 3px;
   font-size: 18px;
   color: black;
 
+}
+
+.artist-page {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 20px auto;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: linear-gradient(90deg, rgba(255,176,64,0.9389) 0%, rgba(255,132,0,0.7988) 35%, rgba(255,166,0,1) 88%);
+}
+
+.video-container {
+  flex: 1;
+}
+
+.artist-info {
+  flex: 1;
+  font-family: Verdana;
+  color: black;
+  word-wrap: break-word;
+}
+
+.artist-info h1 {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .artist-page {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-container, .artist-info {
+    width: 100%;
+  }
 }
 
 
