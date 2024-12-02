@@ -437,17 +437,17 @@ input[type="range"]::-webkit-slider-thumb {
 
 
  .aboutlogo {
-            display: inline-block;
-
+            display: flex;
             padding: 20px;
             margin-bottom: 20px;
             text-align: center;
             align-items: center;
-
             justify-content: center;
+
         }
         .aboutlogo img {
             width: 100px;
+            
         }
         .content {
             max-width: 800px;
